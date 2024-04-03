@@ -1,7 +1,5 @@
 @use 'theme.scss' as *;
 
-/* todo on scroll make border for navbar */
-
 .navbar {
   position: sticky;
   top: 5px;
@@ -26,7 +24,6 @@
 
   border-radius: 4px;
 
-  // FIXME this is the wrong color on the site
   border: 1px solid var(--navbar-border-color);
 
   transition: background-color 0.5s;
