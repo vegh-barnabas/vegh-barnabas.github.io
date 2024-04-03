@@ -4,10 +4,6 @@ body.light {
   --background-color: #{$background-color-light};
   --text-color: #{$text-color-light};
 
-  // todo make these ahve a light color alternative if needed
-  // --primary-color: #{$primary-color};
-  // --secondary-color: #{$secondary-color};
-
   --color-lightred: #{$color-lightred};
   --color-gray: #{$color-gray};
 
@@ -26,9 +22,6 @@ body.light {
 body {
   --background-color: #{$background-color};
   --text-color: #{$text-color};
-
-  // --primary-color: #{$primary-color};
-  // --secondary-color: #{$secondary-color};
 
   --color-lightred: #{$color-lightred};
   --color-gray: #{$color-gray};

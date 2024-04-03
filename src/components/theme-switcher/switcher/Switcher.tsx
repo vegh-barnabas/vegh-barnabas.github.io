@@ -6,7 +6,7 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 export default function Switcher() {
   const [theme, setTheme] = useState(() => {
     const initialTheme = localStorage.getItem('theme');
-    return initialTheme ? initialTheme : 'light';
+    return initialTheme ? initialTheme : 'dark';
   });
 
   function getThemeFromLocalStorage() {
@@ -17,6 +17,8 @@ export default function Switcher() {
       else document.body.classList.remove('light');
 
       setTheme(savedTheme);
+    } else {
+      // todo add default color by the color scheme
     }
   }
 
@@ -42,7 +44,7 @@ export default function Switcher() {
         type="checkbox"
         className={styles.checkbox}
         id="chk"
-        checked={theme === 'light'}
+        checked={theme === 'dark'}
         onChange={toggleTheme}
       />
       <label className={styles.label} htmlFor="chk">
