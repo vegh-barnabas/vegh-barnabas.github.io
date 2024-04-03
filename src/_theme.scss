@@ -1,0 +1,46 @@
+@use 'colors' as *;
+
+body.light {
+  --background-color: #{$background-color-light};
+  --text-color: #{$text-color-light};
+
+  // todo make these ahve a light color alternative if needed
+  // --primary-color: #{$primary-color};
+  // --secondary-color: #{$secondary-color};
+
+  --color-lightred: #{$color-lightred};
+  --color-gray: #{$color-gray};
+
+  --navbar-background-color: #{$navbar-background-color-light};
+  --navbar-item-hover-color: #{$navbar-item-hover-color-light};
+  --navbar-item-click-color: #{$navbar-item-click-color-light};
+  --navbar-item-underline-color: #{$navbar-item-underline-color-light};
+  --navbar-border-color: #{$navbar-border-color-light};
+
+  --link-color: #{$link-color-light};
+  --link-hover-color: #{$link-hover-color-light};
+
+  --theme-switcher-ball-color: #{$theme-switcher-ball-color-light};
+}
+
+body {
+  --background-color: #{$background-color};
+  --text-color: #{$text-color};
+
+  // --primary-color: #{$primary-color};
+  // --secondary-color: #{$secondary-color};
+
+  --color-lightred: #{$color-lightred};
+  --color-gray: #{$color-gray};
+
+  --navbar-background-color: #{$navbar-background-color};
+  --navbar-item-hover-color: #{$navbar-item-hover-color};
+  --navbar-item-click-color: #{$navbar-item-click-color};
+  --navbar-item-underline-color: #{$navbar-item-underline-color};
+  --navbar-border-color: #{$navbar-border-color};
+
+  --link-color: #{$link-color};
+  --link-hover-color: #{$link-hover-color};
+
+  --theme-switcher-ball-color: #{$theme-switcher-ball-color};
+}

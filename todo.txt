@@ -3,3 +3,4 @@
 - shorten image path for articles in tsconfig.json
 - the articles are not the same width when making the window smaller
 - make a table grid list for downloading files
+- visited link color shouldnt change

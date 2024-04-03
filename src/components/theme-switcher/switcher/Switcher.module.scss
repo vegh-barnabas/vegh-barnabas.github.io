@@ -1,0 +1,57 @@
+@use 'theme.scss' as *;
+
+.switch1 {
+  box-sizing: border-box;
+  transition: background 0.2s linear;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: var(--navbar-background-color);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  width: 40px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: var(--theme-switcher-ball-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+body.dark {
+  .label {
+    background-color: lightgreen;
+  }
+
+  .label .ball {
+    background-color: cyan;
+  }
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(22px);
+}
+
+.moon {
+  color: #f1c40f;
+}
+
+.sun {
+  color: #f39c12;
+}

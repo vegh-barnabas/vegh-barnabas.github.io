@@ -1,18 +1,50 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from 'components/navbar/Navbar.module.scss';
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <Link to={'/'} className={styles.navbarItem}>
+      {/* <NavLink
+        to={'/'}
+        // to={'/'}
+        // className={`${styles.navbarItem} ${
+        //   pathName === '/' ? styles.navbarActive : ''
+        // }`}
+        // className={({ isActive, isPending }) =>
+        //   isPending ? 'pending' : isActive ? 'navbarActive' : ''
+        // }
+        style={(state) => console.log(state)} // { isActive: true }
+      >
         Home
-      </Link>
-      <Link to={'/elte'} className={styles.navbarItem}>
+      </NavLink>
+      <NavLink to={'/elte'} className={styles.navbarItem}>
         ELTE
-      </Link>
-      <Link to={'/contact'} className={styles.navbarItem}>
+      </NavLink>
+      <NavLink to={'/contact'} className={styles.navbarItem}>
         Contact
-      </Link>
+      </NavLink> */}
+
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          [styles.navbarItem, isActive ? styles.navbarActive : ''].join(' ')
+        }>
+        Home
+      </NavLink>
+      <NavLink
+        to="/elte"
+        className={({ isActive }) =>
+          [styles.navbarItem, isActive ? styles.navbarActive : ''].join(' ')
+        }>
+        Elte
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) =>
+          [styles.navbarItem, isActive ? styles.navbarActive : ''].join(' ')
+        }>
+        Contact
+      </NavLink>
     </nav>
   );
 }

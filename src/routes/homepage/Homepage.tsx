@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 
+import 'animate.css';
+
 function Homepage() {
   return (
     <>
-      <div className="content">
+      <div className="content animate__animated animate__fadeIn">
         <h1>Welcome to my page!</h1>
         <p>
           Here you can access my personal resources as well as the lectures for
@@ -14,7 +16,11 @@ function Homepage() {
         </p>
         <p>
           If you come across any errors, please reach out to me in the email
-          address provided on the <Link to={'/contact'}>Contact</Link> page.
+          address provided on the{' '}
+          <Link to={'/contact'} className="link">
+            Contact
+          </Link>{' '}
+          page.
         </p>
       </div>
     </>

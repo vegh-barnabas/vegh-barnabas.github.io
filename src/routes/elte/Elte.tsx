@@ -1,6 +1,6 @@
 import styles from 'routes/elte/Elte.module.scss';
 
-// todo make this work import "animate.css";
+import 'animate.css';
 
 export default function Elte() {
   return (
@@ -24,7 +24,7 @@ export default function Elte() {
               href="https://ikelte-my.sharepoint.com/:f:/g/personal/ak3g4s_inf_elte_hu/EnuXFuIMLjVBsm5PsFaysWIBwsrWaLCiF8KqHR5wNijx6A?e=xogUPD"
               target="_blank"
               rel="noreferrer"
-              className={styles.link}>
+              className={`${styles.link} link`}>
               here
             </a>
             , or download them individually:
@@ -35,7 +35,7 @@ export default function Elte() {
                 href="https://ikelte-my.sharepoint.com/:u:/g/personal/ak3g4s_inf_elte_hu/EQtzI8Q5xO1LnPeyhsx8GcQBE0_AI3tZv4txr5sa1gEOig?e=KNhI6t"
                 target="_blank"
                 rel="noreferrer"
-                className={styles.link}>
+                className={`${styles.link} link`}>
                 storage.php
               </a>
             </li>
@@ -49,7 +49,7 @@ export default function Elte() {
               href="https://ikelte-my.sharepoint.com/:f:/g/personal/ak3g4s_inf_elte_hu/Eipc0ZsZCfhIrtMcSZYeN5kBpwFJmmmN-NeXsp6doLCqBw?e=P8vZF9"
               target="_blank"
               rel="noreferrer"
-              className={styles.link}>
+              className={`${styles.link} link`}>
               here
             </a>{' '}
             (OneDrive).
@@ -61,14 +61,14 @@ export default function Elte() {
             href="https://ikelte-my.sharepoint.com/:f:/g/personal/ak3g4s_inf_elte_hu/EjyWyT5ZoZZMr2l7e3UmUq4BHYNpfEKXBjHWh8rv_7gL0w?e=DhDV3t"
             target="_blank"
             rel="noreferrer"
-            className={styles.link}>
+            className={`${styles.link} link`}>
             Videos (OneDrive)
           </a>
           <a
             href="https://github.com/vegh-barnabas/szerveroldali-webprog"
             target="_blank"
             rel="noreferrer"
-            className={styles.link}>
+            className={`${styles.link} link`}>
             Files (GitHub)
           </a>
         </div>
@@ -78,14 +78,14 @@ export default function Elte() {
             href="https://ikelte-my.sharepoint.com/:f:/g/personal/ak3g4s_inf_elte_hu/Es0QPzMlRNFCmr-ykJGtUCUBsxriRkBa_rbAz-h2SbugGw?e=4HFs02"
             target="_blank"
             rel="noreferrer"
-            className={styles.link}>
+            className={`${styles.link} link`}>
             Videos (OneDrive)
           </a>
           <a
             href="https://github.com/vegh-barnabas/kliensoldali-webprog"
             target="_blank"
             rel="noreferrer"
-            className={styles.link}>
+            className={`${styles.link} link`}>
             Files (GitHub)
           </a>
         </div>

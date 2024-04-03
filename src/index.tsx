@@ -6,13 +6,13 @@ import Homepage from 'routes/homepage/Homepage';
 import ErrorPage from 'error-page';
 import 'index.scss';
 import Contact from 'routes/contact/Contact';
-import Navbar from 'components/navbar/Navbar';
 import Elte from 'routes/elte/Elte';
+import Topbar from 'components/top-bar/Topbar';
 
 function Layout() {
   return (
     <>
-      <Navbar />
+      <Topbar />
       <Outlet />
     </>
   );
