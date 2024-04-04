@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom';
 import reportWebVitals from 'reportWebVitals';
+
 import Homepage from 'routes/homepage/Homepage';
 import ErrorPage from 'error-page';
-import 'index.scss';
 import Contact from 'routes/contact/Contact';
 import Elte from 'routes/elte/Elte';
 import Topbar from 'components/top-bar/Topbar';
+
+import 'index.scss';
 
 function Layout() {
   return (
@@ -18,7 +20,7 @@ function Layout() {
   );
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Layout />,

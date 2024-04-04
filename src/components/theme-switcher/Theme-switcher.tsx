@@ -1,9 +1,9 @@
-import styles from 'components/theme-switcher/switcher/Switcher.module.scss';
 import { useEffect, useState } from 'react';
-
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-export default function Switcher() {
+import styles from 'components/theme-switcher/Theme-switcher.module.scss';
+
+export default function ThemeSwitcher() {
   const [theme, setTheme] = useState(() => {
     const initialTheme = localStorage.getItem('theme');
     return initialTheme ? initialTheme : 'dark';
@@ -39,15 +39,15 @@ export default function Switcher() {
   }, [theme]);
 
   return (
-    <div className={styles.switch1}>
+    <div className={styles.switch}>
       <input
         type="checkbox"
         className={styles.checkbox}
-        id="chk"
+        id="checkbox"
         checked={theme === 'dark'}
         onChange={toggleTheme}
       />
-      <label className={styles.label} htmlFor="chk">
+      <label className={styles.label} htmlFor="checkbox">
         <FaMoon className={styles.moon} />
         <FaSun className={styles.sun} />
         <div className={styles.ball}></div>

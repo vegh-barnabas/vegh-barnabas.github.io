@@ -1,8 +1,9 @@
 @use 'theme.scss' as *;
 
-.switch1 {
+.switch {
   box-sizing: border-box;
   transition: background 0.2s linear;
+  padding-right: 5rem;
 }
 
 .checkbox {
@@ -49,9 +50,9 @@ body.dark {
 }
 
 .moon {
-  color: #f1c40f;
+  color: var(--color-yellow);
 }
 
 .sun {
-  color: #f39c12;
+  color: var(--color-orange);
 }

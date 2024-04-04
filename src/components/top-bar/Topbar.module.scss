@@ -3,13 +3,24 @@
   align-content: center;
   justify-content: center;
   align-items: center;
+
+  position: sticky;
+  top: 5px;
+  z-index: 1;
+
+  margin-top: 25px;
+}
+
+.left {
+  flex: 1;
 }
 
 .navbarContainer {
-  width: 100%;
-  margin-left: 300px;
+  flex: 2;
 }
 
-.themeSwitcherContainer {
-  width: 300px;
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: end;
 }

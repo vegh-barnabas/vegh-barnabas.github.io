@@ -1,6 +1,49 @@
-- add favicon in src/app
-- add a theme.css file with the color variables
-- shorten image path for articles in tsconfig.json
-- the articles are not the same width when making the window smaller
-- make a table grid list for downloading files
-- visited link color shouldnt change
+- RAKD RENDBE A GIT COMMIT HISTORYT!!!!!!!!
+- navbar görgetéskor sticky legyen
+    - szedd szét 3 divre azt a szart és csak a navbart tartalmazóra rakj stickyt
+        - na de akkor hogy számolom ki a méretét? meg h középen legyen? talán rem-ekkel lehetne
+- add favicon in src/app ✅
+- konfetti effekt ha rahoverelsz vagy ratapelsz a welcome to my page szovegre
+- csak temavaltasnal legyen effekt
+
+
+CODING GUIDE
+importok:
+- először Reactosok meg packagesek
+- utána saját import cuccok
+- utána animate css
+- utána styles
+
+
+
+  // const [scrollTop, setScrollTop] = useState(0);
+  // const [navPadding, changeNavPadding] = useState('');
+
+  // const handleScroll = () => {
+  //   const bodyScrollTop =
+  //     document.documentElement.scrollTop || document.body.scrollTop;
+  //   setScrollTop(bodyScrollTop);
+  // };
+
+  // // Add event listener when the component mounts
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
+
+  // // Apply padding to nav links when scrollTop is not zero
+  // useEffect(() => {
+  //   // Set padding based on scrollTop
+  //   if (scrollTop !== 0) {
+  //     changeNavPadding('0');
+  //   } else {
+  //     changeNavPadding('1'); // Reset padding
+  //   }
+  // }, [scrollTop]);
+
+// .rightContainer {
+//   transition: opacity 0.2s;
+//   transition-timing-function: ease-out;
+// }
