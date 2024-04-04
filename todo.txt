@@ -5,6 +5,7 @@
 - add favicon in src/app ✅
 - konfetti effekt ha rahoverelsz vagy ratapelsz a welcome to my page szovegre
 - csak temavaltasnal legyen effekt
+- all pages are scrollable no matter what
 
 
 CODING GUIDE
