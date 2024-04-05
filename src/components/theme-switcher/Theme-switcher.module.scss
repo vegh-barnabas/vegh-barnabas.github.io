@@ -10,6 +10,12 @@
   justify-content: end;
 }
 
+@media (width <= 650px) {
+  .switch {
+    display: none;
+  }
+}
+
 .checkbox {
   opacity: 0;
   position: absolute;
