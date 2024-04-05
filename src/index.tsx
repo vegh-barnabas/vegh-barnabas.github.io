@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom';
 import reportWebVitals from 'reportWebVitals';
@@ -7,14 +7,24 @@ import Homepage from 'routes/homepage/Homepage';
 import ErrorPage from 'error-page';
 import Contact from 'routes/contact/Contact';
 import Elte from 'routes/elte/Elte';
-import Topbar from 'components/top-bar/Topbar';
+import Navbar from 'components/navbar/Navbar';
+import ThemeSwitcher from 'components/theme-switcher/Theme-switcher';
 
 import 'index.scss';
 
 function Layout() {
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      document.body.classList.add('transition');
+    }, 300);
+
+    return () => clearTimeout(timeout);
+  });
+
   return (
     <>
-      <Topbar />
+      <Navbar />
+      <ThemeSwitcher />
       <Outlet />
     </>
   );

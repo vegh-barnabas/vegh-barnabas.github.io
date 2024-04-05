@@ -19,18 +19,19 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 
-  transition: background-color 0.5s;
-  transition-timing-function: ease-out;
+  &.transition {
+    transition: background-color 0.5s;
+    transition-timing-function: ease-out;
+  }
 }
 
 html,
 body {
   margin: 0;
-  height: 100%;
 }
 
 .content {
-  margin: 60px auto auto;
+  margin: 30px auto auto;
   width: 70%;
 
   padding-bottom: 3rem;
@@ -42,6 +43,7 @@ html {
 
 h1 {
   font-size: 4.21rem;
+  margin-top: 15px;
 }
 
 h2 {
