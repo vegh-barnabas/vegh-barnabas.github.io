@@ -6,7 +6,17 @@ import styles from 'components/theme-switcher/Theme-switcher.module.scss';
 export default function ThemeSwitcher() {
   const [theme, setTheme] = useState(() => {
     const initialTheme = localStorage.getItem('theme');
-    return initialTheme ? initialTheme : 'dark';
+
+    if (initialTheme) return initialTheme;
+    else {
+      const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+      if (darkThemeMq.matches) {
+        return 'dark';
+      } else {
+        document.body.classList.add('light');
+        return 'light';
+      }
+    }
   });
 
   function getThemeFromLocalStorage() {
@@ -18,7 +28,13 @@ export default function ThemeSwitcher() {
 
       setTheme(savedTheme);
     } else {
-      // todo add default color by the color scheme
+      const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+      if (darkThemeMq.matches) {
+        return 'dark';
+      } else {
+        document.body.classList.add('light');
+        return 'light';
+      }
     }
   }
 
