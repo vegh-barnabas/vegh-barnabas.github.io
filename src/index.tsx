@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom';
+import {
+  createHashRouter,
+  Navigate,
+  Outlet,
+  RouterProvider,
+} from 'react-router-dom';
 import reportWebVitals from 'reportWebVitals';
 
 import Homepage from 'routes/homepage/Homepage';
@@ -47,6 +52,14 @@ const router = createHashRouter([
       {
         path: '/elte',
         element: <Elte />,
+      },
+      {
+        path: '/404',
+        element: <ErrorPage />,
+      },
+      {
+        path: '*',
+        element: <Navigate to="/404" />,
       },
     ],
   },
