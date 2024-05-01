@@ -11,11 +11,41 @@ export default function Elte() {
           Server-side Webprogramming and Client-side Webprogramming.
         </p>
         <p>
+          I also included some useful stuff where you can learn handy concepts.
+        </p>
+        <p>
           You will need an{' '}
           <span className={styles.strong}>active ELTE Microsoft account</span>{' '}
           to watch the videos and access the files located on OneDrive.
         </p>
         <p>The files are hosted on OneDrive or on my personal GitHub.</p>
+        <h4>General useful stuff</h4>
+        <div className={styles.section}>
+          <ul>
+            <li>
+              <span>Grid and flexbox game: </span>
+              <a
+                href="https://codingfantasy.com/"
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.link} link`}>
+                codingfantasy.com
+              </a>
+            </li>
+            <li>
+              <span>
+                Modern javascript tutorial from beginner to advanced:{' '}
+              </span>
+              <a
+                href="https://javascript.info/"
+                target="_blank"
+                rel="noreferrer"
+                className={`${styles.link} link`}>
+                javascript.info
+              </a>
+            </li>
+          </ul>
+        </div>
         <h4>Useful files for courses</h4>
         <div className={styles.section}>
           <p className={styles.subheading}>
