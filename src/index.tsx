@@ -12,8 +12,7 @@ import Homepage from 'routes/homepage/Homepage';
 import ErrorPage from 'error-page';
 import Contact from 'routes/contact/Contact';
 import Elte from 'routes/elte/Elte';
-import Navbar from 'components/navbar/Navbar';
-import ThemeSwitcher from 'components/theme-switcher/Theme-switcher';
+import TopBar from 'components/top-bar/Top-bar';
 
 import 'index.scss';
 
@@ -28,8 +27,7 @@ function Layout() {
 
   return (
     <>
-      <Navbar />
-      <ThemeSwitcher />
+      <TopBar />
       <Outlet />
     </>
   );
