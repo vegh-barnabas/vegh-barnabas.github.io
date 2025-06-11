@@ -49,6 +49,17 @@ export default function Navbar() {
         }>
         Contact
       </NavLink>
+      <NavLink
+        to="/articles"
+        className={({ isActive }) =>
+          [
+            styles.navbarItem,
+            isActive ? styles.navbarActive : '',
+            transition ? styles.transition : '',
+          ].join(' ')
+        }>
+        Articles
+      </NavLink>
     </nav>
   );
 }

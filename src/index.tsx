@@ -15,6 +15,7 @@ import Elte from 'routes/elte/Elte';
 import TopBar from 'components/top-bar/Top-bar';
 
 import 'index.scss';
+import Articles from 'routes/articles/Articles';
 
 function Layout() {
   useEffect(() => {
@@ -50,6 +51,10 @@ const router = createHashRouter([
       {
         path: '/elte',
         element: <Elte />,
+      },
+      {
+        path: '/articles',
+        element: <Articles />,
       },
       {
         path: '/404',
