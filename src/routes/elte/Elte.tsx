@@ -7,7 +7,7 @@ export default function Elte() {
     <>
       <div className="content animate__animated animate__fadeIn">
         <p>
-          This is the list of all of my courses held in Webprogramming,
+          This is the list of some of my courses held in Webprogramming,
           Server-side Webprogramming and Client-side Webprogramming.
         </p>
         <p>
@@ -43,6 +43,18 @@ export default function Elte() {
                 className={`${styles.link} link`}>
                 javascript.info
               </a>
+              <ul>
+                <li>
+                  <span>Article about Shadow DOM: </span>
+                  <a
+                    href="https://javascript.info/shadow-dom"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`${styles.link} link`}>
+                    javascript.info/shadow-dom
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -113,6 +125,16 @@ export default function Elte() {
           </a>
           <a
             href="https://github.com/vegh-barnabas/kliensoldali-webprog"
+            target="_blank"
+            rel="noreferrer"
+            className={`${styles.link} link`}>
+            Files (GitHub)
+          </a>
+        </div>
+        <h4>Client-Side Webprogramming 24/25-2</h4>
+        <div className={styles.section}>
+          <a
+            href="https://github.com/vegh-barnabas/kliens-24-25-2"
             target="_blank"
             rel="noreferrer"
             className={`${styles.link} link`}>
