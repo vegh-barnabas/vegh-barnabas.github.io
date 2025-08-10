@@ -1,0 +1,89 @@
+@use 'sass:math';
+
+// todo softer colors
+
+@function halfNegative($value) {
+  @return ($value / 2) - math.random($value);
+}
+
+.content {
+  perspective: 1000px;
+}
+
+.heading {
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.cursorEnabled {
+  cursor: pointer;
+}
+
+.confetti {
+  transform-style: preserve-3d;
+  position: absolute;
+  inset: 40%;
+  opacity: 0;
+}
+
+.confetti > span {
+  $max-width: 17;
+  $min-width: 5px;
+  $shape: 0.5; // 0 = circle | 0.5 = mix | 1 = squares
+  $horizontal-max: 80vw;
+  $vertical-max: 35vh;
+  $max-depth: 500px;
+  $base-hue: 1; // 1 to 360
+  $hue-variation: 360; // 1 = no | 360 = max
+  $max-spin: 10turn;
+
+  width: max(var(--confetti-size), $min-width);
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: var(--shape);
+  background-color: hsl(var(--hue) 100% 50%);
+
+  @for $i from 1 through 50 {
+    &:nth-child(#{$i}) {
+      --shape: #{(math.random() - $shape) * 100vw};
+      --hue: #{$base-hue + halfNegative($hue-variation)};
+      --confetti-size: #{math.random($max-width)}px;
+      --offsetY: #{halfNegative($vertical-max)};
+      --offsetX: #{halfNegative($horizontal-max)};
+      --offsetZ: #{halfNegative($max-depth)};
+      --spin: #{math.random($max-spin)}turn;
+    }
+  }
+}
+
+.explosion {
+  animation: confettiSettle 10s;
+}
+
+.explosion > span {
+  $intensity: 0.75;
+
+  animation: confettiSpread 10s cubic-bezier(0, $intensity, 1, 1);
+}
+
+@keyframes confettiSpread {
+  25% {
+    translate: 0 -35vh;
+  }
+  100% {
+    translate: 0 -35vh;
+    transform: translateX(var(--offsetX)) translateY(var(--offsetY))
+      translateZ(var(--offsetZ)) rotateX(var(--spin));
+  }
+}
+
+@keyframes confettiSettle {
+  0%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50vh);
+  }
+}
