@@ -11,7 +11,7 @@ function Homepage() {
 
   const [confetti, setConfetti] = useState(false);
 
-  const COOLDOWN_TIME = 10_000; // in ms
+  const COOLDOWN_TIME = 3_000; // in ms
   const [confettiCooldown, setConfettiCooldown] = useState(0);
 
   const handleConfettiEffect = () => {

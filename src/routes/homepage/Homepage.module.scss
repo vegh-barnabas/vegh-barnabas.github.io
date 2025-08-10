@@ -22,7 +22,7 @@
 .confetti {
   transform-style: preserve-3d;
   position: absolute;
-  inset: 40%;
+  inset: 25%;
   opacity: 0;
 }
 
@@ -31,10 +31,10 @@
   $min-width: 5px;
   $shape: 0.5; // 0 = circle | 0.5 = mix | 1 = squares
   $horizontal-max: 80vw;
-  $vertical-max: 35vh;
+  $vertical-max: 30vh;
   $max-depth: 500px;
-  $base-hue: 1; // 1 to 360
-  $hue-variation: 360; // 1 = no | 360 = max
+  $base-hue: 60; // 1 to 360
+  $hue-variation: 140; // 1 = no | 360 = max
   $max-spin: 10turn;
 
   width: max(var(--confetti-size), $min-width);
@@ -57,21 +57,21 @@
 }
 
 .explosion {
-  animation: confettiSettle 10s;
+  animation: confettiSettle 3s;
 }
 
 .explosion > span {
   $intensity: 0.75;
 
-  animation: confettiSpread 10s cubic-bezier(0, $intensity, 1, 1);
+  animation: confettiSpread 3s cubic-bezier(0, $intensity, 1, 1);
 }
 
 @keyframes confettiSpread {
   25% {
-    translate: 0 -35vh;
+    translate: 0 -13vh;
   }
   100% {
-    translate: 0 -35vh;
+    translate: 0 -13vh;
     transform: translateX(var(--offsetX)) translateY(var(--offsetY))
       translateZ(var(--offsetZ)) rotateX(var(--spin));
   }
@@ -84,6 +84,6 @@
   }
   100% {
     opacity: 0;
-    transform: translateY(50vh);
+    transform: translateY(15vh);
   }
 }
