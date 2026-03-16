@@ -50,7 +50,7 @@ export default function Navbar() {
         Contact
       </NavLink>
       <NavLink
-        to="/articles"
+        to="/prep"
         className={({ isActive }) =>
           [
             styles.navbarItem,
@@ -58,7 +58,7 @@ export default function Navbar() {
             transition ? styles.transition : '',
           ].join(' ')
         }>
-        Articles
+        Prep Guide
       </NavLink>
     </nav>
   );

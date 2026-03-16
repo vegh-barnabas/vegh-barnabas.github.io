@@ -12,10 +12,10 @@ import Homepage from 'routes/homepage/Homepage';
 import ErrorPage from 'error-page';
 import Contact from 'routes/contact/Contact';
 import Elte from 'routes/elte/Elte';
+import InterviewPrep from 'routes/interview-prep/Interview-prep';
 import TopBar from 'components/top-bar/Top-bar';
 
 import 'index.scss';
-import Articles from 'routes/articles/Articles';
 
 function Layout() {
   useEffect(() => {
@@ -53,8 +53,8 @@ const router = createHashRouter([
         element: <Elte />,
       },
       {
-        path: '/articles',
-        element: <Articles />,
+        path: '/prep',
+        element: <InterviewPrep />,
       },
       {
         path: '/404',
