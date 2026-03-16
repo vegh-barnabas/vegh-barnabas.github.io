@@ -1,8 +1,8 @@
+import 'animate.css';
+
 import { Link } from 'react-router-dom';
 
-import styles from 'routes/homepage/Homepage.module.scss';
-
-import 'animate.css';
+import styles from './Homepage.module.scss';
 
 function Homepage() {
   return (

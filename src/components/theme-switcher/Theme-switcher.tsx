@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-import styles from 'components/theme-switcher/Theme-switcher.module.scss';
+import styles from './Theme-switcher.module.scss';
 
 export default function ThemeSwitcher() {
   const [theme, setTheme] = useState(() => {

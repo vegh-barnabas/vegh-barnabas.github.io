@@ -1,4 +1,4 @@
-import styles from 'components/article/Article.module.scss';
+import styles from './Article.module.scss';
 
 type ArticleProps = {
   image: string;

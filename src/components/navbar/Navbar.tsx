@@ -1,7 +1,7 @@
-import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
-import styles from 'components/navbar/Navbar.module.scss';
+import styles from './Navbar.module.scss';
 
 export default function Navbar() {
   const [transition, changeTransition] = useState(false);

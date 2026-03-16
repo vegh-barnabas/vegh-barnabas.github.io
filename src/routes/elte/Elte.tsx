@@ -1,7 +1,6 @@
-import styles from 'routes/elte/Elte.module.scss';
+import 'animate.css';
 
-import 'animate.css';
-import 'animate.css';
+import styles from './Elte.module.scss';
 
 export default function Elte() {
   return (

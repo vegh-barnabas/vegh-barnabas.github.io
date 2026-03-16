@@ -1,8 +1,8 @@
-import { BsChatLeftDotsFill, BsGithub, BsLinkedin } from 'react-icons/bs';
-
 import 'animate.css';
 
-import styles from 'routes/contact/Contact.module.scss';
+import { BsChatLeftDotsFill, BsGithub, BsLinkedin } from 'react-icons/bs';
+
+import styles from './Contact.module.scss';
 
 export default function Contact() {
   return (

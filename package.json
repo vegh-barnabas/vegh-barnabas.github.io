@@ -32,7 +32,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "prettier-check": "npx prettier . --check",
-    "prettier-fix": "npx prettier . --write"
+    "prettier-fix": "npx prettier . --write",
+    "eslint-check": "npx eslint src",
+    "eslint-fix": "npx eslint src --fix"
   },
   "eslintConfig": {
     "extends": [

@@ -1,3 +1,5 @@
+import 'index.scss';
+
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import {
@@ -8,14 +10,12 @@ import {
 } from 'react-router-dom';
 import reportWebVitals from 'reportWebVitals';
 
-import Homepage from 'routes/homepage/Homepage';
-import ErrorPage from 'error-page';
-import Contact from 'routes/contact/Contact';
-import Elte from 'routes/elte/Elte';
-import InterviewPrep from 'routes/interview-prep/Interview-prep';
-import TopBar from 'components/top-bar/Top-bar';
-
-import 'index.scss';
+import TopBar from './components/top-bar/Top-bar';
+import ErrorPage from './error-page';
+import Contact from './routes/contact/Contact';
+import Elte from './routes/elte/Elte';
+import Homepage from './routes/homepage/Homepage';
+import InterviewPrep from './routes/interview-prep/Interview-prep';
 
 function Layout() {
   useEffect(() => {
