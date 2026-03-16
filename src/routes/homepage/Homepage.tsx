@@ -57,7 +57,9 @@ function Homepage() {
           the current year.
         </p>
         <p>
-          Also if I tinker with some stuff, and I find it cool, I put it here. I might also share articles about my experiences which could be useful someone.
+          Also if I tinker with some stuff, and I find it cool, I put it here. I
+          might also share articles about my experiences which could be useful
+          someone.
         </p>
         <p>
           If you come across any errors, please reach out to me in the email
