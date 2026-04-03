@@ -655,6 +655,36 @@ export default function InterviewPrep() {
           anything, just ask some stuff about their experience.
         </p>
 
+        <h5>Job pages</h5>
+        <p>
+          I've mainly used LinkedIn and Indeed.ie. I had no particular luck on
+          indeed, so this time with this experience, I'd adwise you to browse
+          job listings on LinkedIn. I also browsed{' '}
+          <a href="https://hiring.cafe/">hiring.cafe</a> and y a few times, and
+          I was subscribed to z, which sent me letters about job positions which
+          were quite fitting.
+        </p>
+        <p>
+          On LinkedIn, I'd suggest doing a search with "Frontend developer" with
+          the last 24 hours and set the location. Check this search daily.
+        </p>
+
+        <p>Honorable mentions tools/pages I've used</p>
+        <p>
+          <ul>
+            <li>
+              <a href="https://www.frontendinterviewhandbook.com/">
+                frontendinterviewhandbook.com
+              </a>
+              - quite handy tool for preparing. Didn't use it much however.
+            </li>
+            <li>
+              https://docs.google.com/document/d/1wdkgpgU7lFoV801ysrBn8qrPaIpyUsUH/edit
+              quite handy template reference
+            </li>
+          </ul>
+        </p>
+
         <h4>Last words</h4>
         <p>
           I think there might be some opposing thoughts in this article, but
