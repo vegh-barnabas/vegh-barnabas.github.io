@@ -49,17 +49,6 @@ export default function Navbar() {
         }>
         Contact
       </NavLink>
-      <NavLink
-        to="/prep"
-        className={({ isActive }) =>
-          [
-            styles.navbarItem,
-            isActive ? styles.navbarActive : '',
-            transition ? styles.transition : '',
-          ].join(' ')
-        }>
-        Prep Guide
-      </NavLink>
     </nav>
   );
 }

@@ -15,7 +15,6 @@ import ErrorPage from './error-page';
 import Contact from './routes/contact/Contact';
 import Elte from './routes/elte/Elte';
 import Homepage from './routes/homepage/Homepage';
-import InterviewPrep from './routes/interview-prep/Interview-prep';
 
 function Layout() {
   useEffect(() => {
@@ -51,10 +50,6 @@ const router = createHashRouter([
       {
         path: '/elte',
         element: <Elte />,
-      },
-      {
-        path: '/prep',
-        element: <InterviewPrep />,
       },
       {
         path: '/404',
