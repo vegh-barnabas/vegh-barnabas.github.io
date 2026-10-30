@@ -10,11 +10,12 @@ import {
 } from 'react-router-dom';
 import reportWebVitals from 'reportWebVitals';
 
-import TopBar from './components/top-bar/Top-bar';
-import ErrorPage from './error-page';
-import Contact from './routes/contact/Contact';
-import Elte from './routes/elte/Elte';
-import Homepage from './routes/homepage/Homepage';
+import Homepage from 'routes/homepage/Homepage';
+import ErrorPage from 'error-page';
+import Contact from 'routes/contact/Contact';
+import Elte from 'routes/elte/Elte';
+import TopBar from 'components/top-bar/Top-bar';
+import Minecraft from 'routes/minecraft/Minecraft';
 
 function Layout() {
   useEffect(() => {
@@ -50,6 +51,10 @@ const router = createHashRouter([
       {
         path: '/elte',
         element: <Elte />,
+      },
+      {
+        path: '/minecraft',
+        element: <Minecraft />,
       },
       {
         path: '/404',
