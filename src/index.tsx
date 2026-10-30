@@ -1,5 +1,7 @@
 import 'index.scss';
 
+import TopBar from 'components/top-bar/Top-bar';
+import ErrorPage from 'error-page';
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import {
@@ -9,12 +11,9 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import reportWebVitals from 'reportWebVitals';
-
-import Homepage from 'routes/homepage/Homepage';
-import ErrorPage from 'error-page';
 import Contact from 'routes/contact/Contact';
 import Elte from 'routes/elte/Elte';
-import TopBar from 'components/top-bar/Top-bar';
+import Homepage from 'routes/homepage/Homepage';
 import Minecraft from 'routes/minecraft/Minecraft';
 
 function Layout() {
